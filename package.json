@@ -6,6 +6,10 @@
   "types": "dist/index.d.ts",
   "author": "katercolin@gmail.com",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nightf0rc3/connectbox.git"
+  },
   "scripts": {
     "build": "webpack --display-error-details"
   },
