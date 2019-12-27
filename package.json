@@ -1,0 +1,40 @@
+{
+  "name": "connectbox",
+  "version": "1.0.0",
+  "description": "API wrapper for the Connect Box (modem/router)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "katercolin@gmail.com",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --display-error-details"
+  },
+  "files": [
+    "README.md",
+    "dist/"
+  ],
+  "keywords": [
+    "connectbox",
+    "router",
+    "modem",
+    "api",
+    "unitymedia"
+  ],
+  "dependencies": {
+    "axios": "^0.19.0",
+    "xml2js": "^0.4.23"
+  },
+  "devDependencies": {
+    "@types/node": "^9.6.4",
+    "@types/xml2js": "^0.4.5",
+    "eslint": "^5.3.0",
+    "ts-loader": "5.2.2",
+    "tslib": "~1.7.1",
+    "tslint-config-airbnb": "^5.9.2",
+    "tsutils": "^2.26.1",
+    "typescript": "^2.8.1",
+    "uglifyjs-webpack-plugin": "1.3.0",
+    "webpack": "^4.41.4",
+    "webpack-cli": "3.1.0"
+  }
+}
