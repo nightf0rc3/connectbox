@@ -1,6 +1,6 @@
 {
   "name": "connectbox",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "API wrapper for the Connect Box (modem/router)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
