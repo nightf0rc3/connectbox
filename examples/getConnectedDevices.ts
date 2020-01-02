@@ -6,6 +6,7 @@ import ConnectBox from '../src';
         await connectBox.login('password');
         const devices = await connectBox.getConnectedDevices();
         console.log(devices);
+        await connectBox.logout();
     } catch (err) {
         console.log(err);
     }

@@ -49,10 +49,17 @@ export default class ConnectBox {
         if (data.data.indexOf('loginincorrect') > -1) {
             throw new Error('Login failed, wrong password provided');
         }
+        if (data.data.indexOf('AccessDenied') > -1) {
+            throw new Error('Someone else is currently connected to the ConnectBox, cannot initiate session');
+        }
     }
 
     public async reboot() {
         return this.set(SetFunction.REBOOT);
+    }
+
+    public async logout() {
+        return this.set(SetFunction.LOGOUT);
     }
 
     public async getGlobalSettings() {
@@ -69,6 +76,7 @@ export default class ConnectBox {
 }
 
 export enum SetFunction {
+    LOGOUT = 16,
     REBOOT = 133
 }
 
